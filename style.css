@@ -327,10 +327,11 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   header {
-    padding: 20px;
+    flex-direction: column;
+    text-align: center;
   }
-  header h1 {
-    font-size: 2.5em;
+  header img {
+    width: 250px;
   }
 }
 
@@ -338,34 +339,28 @@ footer {
   .productos {
     grid-template-columns: repeat(1, 1fr);
   }
-  .tab {
-    padding: 10px 15px;
-    font-size: 1.1em;
-  }
-  header {
+  .tabs {
     flex-direction: column;
-    text-align: center;
+    gap: 10px;
   }
-  header img {
-    width: 250px;
-  }
-  header h1 {
-    font-size: 2em;
+  .tab {
+    font-size: 1.1em;
+    padding: 10px 15px;
   }
 }
 
 @media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
   .tab {
     font-size: 1em;
     padding: 8px 12px;
   }
   .productos {
-    padding: 15px;
+    padding: 20px;
   }
-  header img {
-    width: 200px;
-  }
-  header h1 {
-    font-size: 1.5em;
+  .producto {
+    padding: 20px;
   }
 }
