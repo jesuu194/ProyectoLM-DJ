@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #0a0a0a;
+  background: #1f1818;
   color: #fff;
   overflow-x: hidden;
 }
@@ -173,6 +173,88 @@ h2 {
 .cart-container:hover .cart-dropdown {
   display: block;
 }
+/* Sección de contacto */
+.contacto {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 75, 43, 0.5);
+  width: 70%;
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background: white;
+  color: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #ff4b2b;
+  color: white;
+  transform: scale(1.20);
+}
+
+/* Redes Sociales */
+.redes {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.redes a {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  color: #ff416c;
+}
 
 .cart-container:hover .cart-icon::after {
   content: attr(data-total);
@@ -229,6 +311,7 @@ h2 {
   box-shadow: 0px 4px 30px rgba(255, 0, 255, 0.8);
   color: #fff;
 }
+
 /* Footer */
 footer {
   text-align: center;
@@ -286,7 +369,3 @@ footer {
     font-size: 1.5em;
   }
 }
-
-/* Seccion de contacto */
-
-
